@@ -31,7 +31,7 @@ def youtube_url(update: Update, context: CallbackContext):
 	https://www.youtube.com/channel/UCgNLt08ze6NaZ3uMDLLN3RA?sub_confirmation=1")
 
 def quote(update: Update, context: CallbackContext):
-	url = "https://api.quotable.io/random?tags=wisdom,friendship"
+	url = "https://api.quotable.io/random?tags=friendship"
 	response = requests.get(url)
 	json_data = response.json()
 	update.message.reply_text(json_data["content"])
