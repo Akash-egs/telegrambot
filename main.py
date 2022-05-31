@@ -13,8 +13,9 @@ updater = Updater("5541235735:AAEQdvzPXC-IjCZYiOnNKbCzO5pZ2LBDiRQ",
 
 def start(update: Update, context: CallbackContext):
 	update.message.reply_text(
-		"Hello Welcome This Is Bot Made By Akash. Currently Under Development\
-		/help to see the commands available.")
+		"""Hello Welcome This Is Bot Made By Akash. Currently Under Development\
+		/help to see the commands available.
+		/quote for a random quote.""")
 
 def help(update: Update, context: CallbackContext):
 	update.message.reply_text("""Available Commands.
